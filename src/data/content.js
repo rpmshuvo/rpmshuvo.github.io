@@ -1,10 +1,36 @@
 const content = {
+  heroGreeting: 'Hello.',
+
+  services: [
+    { icon: 'server',  title: 'Backend & API Development', desc: 'Secure, scalable REST APIs and services with PHP/Laravel and Node.js.' },
+    { icon: 'database', title: 'Databases & Performance',   desc: 'Schema design, query tuning, Redis caching and Elasticsearch for speed at scale.' },
+    { icon: 'cloud',   title: 'Deployment & DevOps',        desc: 'Docker, Linux and CI/CD for reliable, repeatable delivery.' },
+  ],
+
+  counters: [
+    { to: 5, suffix: '+',  label: 'Years of experience' },
+    { to: 3, suffix: 'M+', label: 'Daily active users served' },
+    { to: 1, suffix: '',   label: 'Peer-reviewed publication' },
+  ],
+
+  techStrip: [
+    { name: 'PHP', icon: 'php' },
+    { name: 'Laravel', icon: 'laravel' },
+    { name: 'Node.js', icon: 'node' },
+    { name: 'Go', icon: 'go' },
+    { name: 'MySQL', icon: 'mysql' },
+    { name: 'Redis', icon: 'redis' },
+    { name: 'Docker', icon: 'docker' },
+    { name: 'Git', icon: 'git' },
+    { name: 'Linux', icon: 'linux' },
+  ],
+
   profile: {
     name: 'Mehedi Hasan Shuvo',
-    title: 'Backend Software Engineer',
+    title: 'Senior Backend Software Engineer',
     tagline: 'I build secure, scalable backends — REST APIs and systems that serve millions.',
     intro:
-      'Software Engineer with 5+ years building scalable backends across telecom and ERP — ' +
+      'Senior Software Engineer with 5+ years building scalable backends across telecom and ERP — ' +
       'PHP/Laravel and Node.js, with a focus on clean architecture, performance, and reliability.',
     location: 'Dhaka, Bangladesh',
     email: 'rpm_shuvo@outlook.com',
@@ -34,7 +60,7 @@ const content = {
   ],
   about: {
     paragraphs: [
-      'I’m a backend-focused Software Engineer with 5+ years of experience crafting solutions ' +
+      'I’m a backend-focused Senior Software Engineer with 5+ years of experience crafting solutions ' +
         'across the telecommunications and ERP landscapes. I design and build RESTful APIs that ' +
         'are secure, scalable, and resilient under heavy load.',
       'Currently at Brain Station 23, I work as an augmented resource for Banglalink Digital ' +
@@ -61,16 +87,22 @@ const content = {
   ],
   experience: [
     {
-      role: 'Software Engineer',
       company: 'Brain Station 23 Ltd.',
       location: 'Dhaka, Bangladesh',
-      period: 'Nov 2022 — Present',
-      summary: 'Augmented resource at Banglalink Digital Communications — MyBL SuperApp, Banglalink.net, Ryze Bangladesh.',
+      employment: 'Full-time · On-site',
+      totalPeriod: 'Nov 2022 — Present · 3 yrs 8 mos',
+      roles: [
+        { role: 'Senior Software Engineer I', period: 'Jan 2026 — Present' },
+        { role: 'Software Engineer II', period: 'Jul 2024 — Dec 2025' },
+        { role: 'Software Engineer', period: 'Nov 2022 — Jun 2024' },
+      ],
+      summary: 'Projects: RYZE Bangladesh, MyBL (My Banglalink) App, and the Banglalink Corporate Website.',
       points: [
-        'Designed and developed secure, scalable RESTful APIs serving 3M+ daily active users (MyBL).',
-        'Built and maintained CMS features for web products.',
-        'Continuously improved performance and scalability; followed best practices and clean code.',
-        'Collaborated with cross-functional teams and stakeholders to ensure timely delivery.',
+        'Design and develop secure, scalable RESTful APIs powering products that serve 3M+ daily active users (MyBL).',
+        'Develop and maintain CMS for web products.',
+        'Continuously improve performance, scalability, and code quality; follow best practices and version control.',
+        'Collaborate with cross-functional teams and stakeholders to deliver on time.',
+        'Troubleshoot and debug production issues across the web stack.',
       ],
     },
     {

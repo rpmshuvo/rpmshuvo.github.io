@@ -16,8 +16,17 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        display: ['Sora', 'Inter', 'sans-serif'],
       },
       maxWidth: { content: '72rem' },
+      keyframes: {
+        spinSlow: { from: { transform: 'rotate(0deg)' }, to: { transform: 'rotate(360deg)' } },
+        marquee: { from: { transform: 'translateX(0)' }, to: { transform: 'translateX(-50%)' } },
+      },
+      animation: {
+        'spin-slow': 'spinSlow 18s linear infinite',
+        marquee: 'marquee 28s linear infinite',
+      },
     },
   },
   plugins: [],

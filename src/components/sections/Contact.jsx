@@ -1,7 +1,6 @@
-import { FiMail, FiMapPin } from 'react-icons/fi';
+import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 import content from '../../data/content.js';
 import Section from '../layout/Section.jsx';
-import SectionHeading from '../ui/SectionHeading.jsx';
 import Button from '../ui/Button.jsx';
 import SocialLinks from '../ui/SocialLinks.jsx';
 
@@ -23,15 +22,19 @@ export default function Contact() {
 
   return (
     <Section id="contact">
-      <SectionHeading
-        index="07 · Contact"
-        title="Get in touch"
-        subtitle={profile.availability}
-      />
+      <div className="mb-12">
+        <h2 className="font-display text-4xl font-bold sm:text-5xl">
+          Have a project? <span className="text-accent">Let's talk!</span>
+        </h2>
+        <p className="mt-3 max-w-2xl text-muted">{profile.availability}</p>
+      </div>
       <div className="grid gap-10 md:grid-cols-2">
         <div className="space-y-4">
           <a href={`mailto:${profile.email}`} className="flex items-center gap-3 text-body hover:text-accent">
             <FiMail className="text-accent" /> {profile.email}
+          </a>
+          <a href={`tel:${profile.phone}`} className="flex items-center gap-3 text-body hover:text-accent">
+            <FiPhone className="text-accent" /> {profile.phone}
           </a>
           <p className="flex items-center gap-3 text-muted">
             <FiMapPin className="text-accent" /> {profile.location}

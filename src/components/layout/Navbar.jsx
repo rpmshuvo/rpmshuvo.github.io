@@ -17,7 +17,9 @@ export default function Navbar({ theme, toggle }) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-bg/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
-        <a href="#hero" className="font-mono text-lg font-bold text-accent">SHUVO</a>
+        <a href="#hero" className="font-display text-lg font-bold text-body hover:text-accent">
+          SHUVO<span className="text-accent">.</span>
+        </a>
 
         <nav className="hidden items-center gap-7 md:flex">
           {content.nav.map((n) => (

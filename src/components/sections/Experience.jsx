@@ -9,7 +9,7 @@ export default function Experience() {
       <SectionHeading index="03 · Experience" title="Where I've worked" />
       <ol className="space-y-10 border-l border-border pl-2">
         {content.experience.map((item) => (
-          <TimelineItem key={`${item.company}-${item.period}`} item={item} />
+          <TimelineItem key={item.company} item={item} />
         ))}
       </ol>
     </Section>

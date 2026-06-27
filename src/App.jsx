@@ -2,6 +2,7 @@ import { useTheme } from './components/hooks/useTheme.js';
 import Navbar from './components/layout/Navbar.jsx';
 import Footer from './components/layout/Footer.jsx';
 import Hero from './components/sections/Hero.jsx';
+import TechStrip from './components/sections/TechStrip.jsx';
 import About from './components/sections/About.jsx';
 import Skills from './components/sections/Skills.jsx';
 import Experience from './components/sections/Experience.jsx';
@@ -17,6 +18,7 @@ export default function App() {
       <Navbar theme={theme} toggle={toggle} />
       <main>
         <Hero />
+        <TechStrip />
         <About />
         <Skills />
         <Experience />

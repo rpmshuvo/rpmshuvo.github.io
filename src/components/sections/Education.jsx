@@ -11,7 +11,7 @@ export default function Education() {
       <SectionHeading index="06 · Education" title="Education" />
       <Card>
         <div className="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 className="text-lg font-semibold">{e.degree}</h3>
+          <h3 className="font-display text-lg font-semibold">{e.degree}</h3>
           <span className="font-mono text-xs text-muted">{e.period}</span>
         </div>
         <p className="mt-1 text-sm text-muted">{e.school}</p>

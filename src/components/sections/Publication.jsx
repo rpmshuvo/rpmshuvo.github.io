@@ -10,7 +10,7 @@ export default function Publication() {
     <Section id="publication">
       <SectionHeading index="05 · Research" title="Publication" />
       <Card>
-        <h3 className="text-lg font-semibold">{pub.title}</h3>
+        <h3 className="font-display text-lg font-semibold">{pub.title}</h3>
         <p className="mt-2 text-sm text-muted">{pub.venue}</p>
         <p className="mt-1 text-sm text-muted">{pub.authors}</p>
         <a

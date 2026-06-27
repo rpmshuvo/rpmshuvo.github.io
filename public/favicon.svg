@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0B1120"/>
-  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-    font-family="monospace" font-size="26" font-weight="700" fill="#22D3EE">S</text>
+  <rect width="64" height="64" rx="14" fill="#15171C"/>
+  <text x="46%" y="55%" dominant-baseline="middle" text-anchor="middle"
+    font-family="'Segoe UI', system-ui, sans-serif" font-size="30" font-weight="800" fill="#E7E9EC">S</text>
+  <circle cx="46" cy="44" r="4" fill="#F0533D"/>
 </svg>
