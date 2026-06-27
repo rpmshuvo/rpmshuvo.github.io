@@ -27,7 +27,7 @@ const content = {
 
   profile: {
     name: 'Mehedi Hasan Shuvo',
-    title: 'Senior Backend Software Engineer',
+    title: 'Backend Software Engineer',
     tagline: 'I build secure, scalable backends — REST APIs and systems that serve millions.',
     intro:
       'Senior Software Engineer with 5+ years building scalable backends across telecom and ERP — ' +
