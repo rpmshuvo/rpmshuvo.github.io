@@ -1,102 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehedi Hasan Shuvo | Software Engineer</title>
-    <style>
-        /* Base Reset */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      // Set theme before paint to avoid a flash of the wrong theme.
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var dark = stored ? stored === 'dark'
+            : !window.matchMedia('(prefers-color-scheme: light)').matches;
+          document.documentElement.classList.toggle('dark', dark);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Mehedi Hasan Shuvo — Backend Software Engineer</title>
+    <meta name="description" content="Backend Software Engineer (PHP/Laravel, Node.js) with 5+ years building scalable telecom and ERP systems. Open to international roles and freelance." />
+    <meta name="author" content="Mehedi Hasan Shuvo" />
+    <link rel="canonical" href="https://rpmshuvo.github.io/" />
 
-        /* Body Styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #1b2838, #2a3f55);
-            color: #ccc;
-        }
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rpmshuvo.github.io/" />
+    <meta property="og:title" content="Mehedi Hasan Shuvo — Backend Software Engineer" />
+    <meta property="og:description" content="Backend Software Engineer (PHP/Laravel, Node.js). 5+ years, telecom & ERP, 3M+ DAU." />
+    <meta property="og:image" content="https://rpmshuvo.github.io/og-image.svg" />
 
-        /* Profile Container Styling */
-        .profile-container {
-            text-align: center;
-            background: #2e3b4e;
-            padding: 40px;
-            max-width: 450px;
-            border-radius: 15px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease-in-out;
-        }
-        .profile-container:hover {
-            transform: translateY(-10px);
-        }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mehedi Hasan Shuvo — Backend Software Engineer" />
+    <meta name="twitter:description" content="Backend Software Engineer (PHP/Laravel, Node.js). 5+ years, telecom & ERP." />
+    <meta name="twitter:image" content="https://rpmshuvo.github.io/og-image.svg" />
 
-        /* Profile Image */
-        .profile-container img {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-        .profile-container img:hover {
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Profile Title */
-        .profile-container h1 {
-            font-family: 'Courier New', Courier, monospace;
-            color: #4dd0e1;
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            transition: color 0.3s;
-        }
-        .profile-container h1:hover {
-            color: #29b6f6;
-        }
-
-        /* Profile Description */
-        .profile-container p {
-            font-size: 1em;
-            color: #b0bec5;
-            line-height: 1.6;
-            margin-top: 10px;
-        }
-
-        /* LinkedIn Button */
-        .profile-container a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            font-size: 1em;
-            color: #fff;
-            background: #0077b5;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .profile-container a:hover {
-            background: #005582;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-        }
-    </style>
-</head>
-<body>
-    <div class="profile-container">
-        <img src="profile-1.jpeg" alt="Mehedi Hasan Shuvo">
-        <h1>Mehedi Hasan Shuvo</h1>
-        <p>Software Engineer at Brainstation 23 Ltd</p>
-        <p>Welcome to my personal page! I'm passionate about software development, always eager to learn new technologies, and committed to building efficient solutions for complex problems.</p>
-        <a href="https://www.linkedin.com/in/shuvo-rpm/" target="_blank">Connect with me on LinkedIn</a>
-    </div>
-</body>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mehedi Hasan Shuvo",
+      "jobTitle": "Backend Software Engineer",
+      "email": "mailto:rpm_shuvo@outlook.com",
+      "url": "https://rpmshuvo.github.io/",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dhaka", "addressCountry": "BD" },
+      "alumniOf": "American International University-Bangladesh",
+      "knowsAbout": ["PHP", "Laravel", "Node.js", "REST API", "MySQL", "Redis", "Docker", "Distributed Systems"],
+      "sameAs": [
+        "https://github.com/rpmshuvo",
+        "https://www.linkedin.com/in/shuvo-rpm",
+        "https://www.facebook.com/rpm.shuvo"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

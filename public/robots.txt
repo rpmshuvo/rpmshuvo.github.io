@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://rpmshuvo.github.io/sitemap.xml
